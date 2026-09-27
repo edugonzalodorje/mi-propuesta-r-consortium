@@ -5,7 +5,7 @@ Eduardo Gonzalo Moyano Baquero, M.A.E.
 
 Principal Investigator and Lead Developer
 
-Engineer specializing in Statistics and Computer Science. Responsible for the methodological design, architecture and implementation in R/Shiny, development of the Discriminant Analysis workflows, integration of statistical procedures, and consolidation of automated testing and statistical validation processes. Approximately six months of prior prototyping and development work provide the technical foundation for the present consolidation phase.
+Engineer specializing in Statistics and Computer Science. Responsible for the methodological design, architecture and implementation in R/Shiny, development of the Discriminant Analysis workflows, integration of statistical procedures, and implementation of automated testing and statistical verification processes. Approximately six months of prior prototyping and development work provide the technical foundation for the present funded phase.
 
 Live Interactive Prototype (MVP): https://bds-eduardo-baquero.shinyapps.io/SOFTWARE-DISCRIMINANTE/
 
