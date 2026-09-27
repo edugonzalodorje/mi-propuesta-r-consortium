@@ -19,11 +19,5 @@ QA, Process, and Documentation Specialist
 
 Computer systems engineer with experience in process analysis and documentation. Responsible for quality assurance (QA), planning, execution, and documentation of tests, incident tracking and management, regression testing, technical documentation, preparation of the user manual, and consolidation of project deliverables.
 
-## Contributors
-<!--
-Who are the people who have actively helped with this proposal but
-won't necessarily be on the core project team later?
--->
-
 ## Consulted
 No formal external consultations have been conducted regarding this proposal.
