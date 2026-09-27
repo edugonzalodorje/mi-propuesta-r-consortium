@@ -1,6 +1,15 @@
 # Executive Summary
 
-<!--
-This section provides a condensed view of the entire proposal, one page long.
-It should be a comprehensive high-level overview that captures the essence of the proposal, including its goals, methods, expected outcomes, deliverables, and budget.
--->
+Transparent Statistical Learning with R/Shiny: An Interactive Platform for Discriminant Analysis.
+
+Transparent Statistical Learning with R/Shiny is an educational and interactive platform developed in R/Shiny, designed to integrate statistical theory, data preparation, diagnostics, methodological selection, modeling, evaluation, and result interpretation into a unified workflow. Discriminant Analysis is the platform’s methodological foundation and primary focus. Its application requires coordinating various procedures, packages, and decision criteria available in R.
+
+The platform structures the learning and analysis process according to the sequence theory → data → diagnostics → methodological decision → model → results → evaluation → interpretation, facilitating an integrated and transparent understanding of the statistical process.
+
+The platform currently has a functional MVP organized into eight tabs: Load Data, Exploratory Analysis, Missing Values, Categorical Variables, Models, Discriminant Analysis, Logistic Regression, and Help.Together, these tabs support the entire workflow, from data preparation and transformation to modeling, evaluation, and interpretation of results. The platform incorporates LDA/QDA, logistic regression, classical and modern decision trees, and Random Forest, with tables, metrics, visualizations, and explanations to facilitate interpretation.
+
+Funding will enable the consolidation of the MVP over six months by strengthening its functionality, stability, modularization, reproducibility, testing, statistical validation, interface, visualizations, and documentation. No new statistical algorithms will be developed; the objective will be to strengthen the integration and transparent presentation of existing capabilities in R. The work will be conducted in three stages: stabilization and preparation, strengthening and improvement, and validation and consolidation. Validation will combine automated tests, reference datasets, reproducible scenarios, independent calculations, controlled cases, and technical or scientific sources to verify both the correct functioning of the application and the consistency, accuracy, and traceability of its results.
+
+As an outcome, a consolidated MVP will be delivered for reuse and publication within the R ecosystem, with modular code, documented tests, strengthened functionality and visualizations, integrated help, a user manual, and technical documentation.
+
+The requested project funding is US$40,800.
