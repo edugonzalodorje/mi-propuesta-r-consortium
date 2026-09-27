@@ -4,21 +4,17 @@ bibliography: references.bib
 
 # The Problem
 
-```{=html}
-<!--
-Outlining the issue / weak point / problem to be solved by this
-proposal. This should be a compelling section that sets the reader up
-for the next section - the proposed solution!
+Applying Discriminant Analysis requires integrating several stages, including data preparation and exploration, assessment of assumptions, application of statistical tests, selection of procedures, model fitting, validation, and interpretation of results. Although R provides numerous functions and packages for performing these tasks, users must identify and coordinate the relevant tools, adapt the code to the characteristics of each dataset, and integrate the results obtained across the different stages of the analysis.
+The project addresses the difficulty of applying Discriminant Analysis in an integrated, reproducible, and transparent manner while coordinating the statistical tools available in R and facilitating the connection between diagnostics, methodological decisions, modeling, validation, and interpretation of results.
 
-It is important to cover:
+Users who apply Discriminant Analysis, regardless of their level of experience with R.
 
- - [ ] What the problem is
- - [ ] Who it affects
- - [ ] Why is it a problem
- - [ ] What will solving the problem enable (why should it be solved)
- - [ ] Brief summary of existing work and previous attempts (e.g., relevant R packages)
- - [ ] If proposing changes to R itself: letter of support from R Core member
--->
-```
+The Transparent Statistical Learning with R/Shiny platform seeks to reduce the time and effort required to perform these analyses by integrating existing R tools into a simpler, understandable, reproducible, and transparent workflow, enabling users to better leverage the statistical capabilities of the language.
 
-An example in-text citation [@wickham2016].
+The workflow explicitly maintains the relationship between the main stages of the analysis: data → diagnostics → methodological decision → modeling → validation → interpretation, facilitating an understanding of the decisions made and the traceability of the results obtained.
+
+The project has approximately six months of prior work in prototyping and development, during which a functional MVP was built in R/Shiny. The MVP integrates the main stages of the statistical analysis and constitutes the technical foundation of the present proposal.
+
+Funding will be used to consolidate and strengthen the MVP through improvements in stability, modularization, reproducibility, testing, statistical validation, interface, visualizations, and documentation. The development of new statistical algorithms is outside the scope of this project; the objective is to strengthen the integration and transparent presentation of existing statistical procedures in R, increasing the robustness and reusability of the platform.
+
+The project does not require modifications to the R core. Its objective is to integrate and facilitate the use of existing functions, packages, and statistical procedures in R through a structured, understandable, and traceable workflow.
