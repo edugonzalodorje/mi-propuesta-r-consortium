@@ -1,22 +1,23 @@
 # Signatories
-<!--
-This section provides the ISC with a view of the support received from
-the community for a proposal. Acceptance isn't predicated on
-popularity but community acceptance is important. Willingness to
-accept outside input is also a good marker for project delivery.
-
-An optional section would be for R-Core signatories where changes to R
-are proposed.
--->
 
 ## Project team
-<!--
-Who are the people responsible for actually delivering the project if
-the proposal gets accepted and are already signed up and rearing to
-go? Briefly describe all participants and the skills they will bring
-to the project. Include public artifacts such as code repositories to
-show their tack record.
--->
+Eduardo Gonzalo Moyano Baquero, M.A.E.
+
+Principal Investigator and Lead Developer
+
+Engineer specializing in Statistics and Computer Science. Responsible for the methodological design, architecture and implementation in R/Shiny, development of the Discriminant Analysis workflows, integration of statistical procedures, and consolidation of automated testing and statistical validation processes. Approximately six months of prior prototyping and development work provide the technical foundation for the present consolidation phase.
+
+Live Interactive Prototype (MVP): https://bds-eduardo-baquero.shinyapps.io/SOFTWARE-DISCRIMINANTE/
+
+Lilia Beatriz Santos Díaz, M.A.E., M.S.I.G., M.I.A.
+UX/UI and Front-End Specialist
+
+Computer systems engineer with experience in enterprise software development. Responsible for the design and evaluation of the user experience and user interface (UX/UI), development and review of visualizations, usability evaluation, and execution of interaction and application functionality tests.
+
+Ma. Mercedes Jaramillo Campos, M.A.E.
+QA, Process, and Documentation Specialist
+
+Computer systems engineer with experience in process analysis and documentation. Responsible for quality assurance (QA), planning, execution, and documentation of tests, incident tracking and management, regression testing, technical documentation, preparation of the user manual, and consolidation of project deliverables.
 
 ## Contributors
 <!--
@@ -25,8 +26,4 @@ won't necessarily be on the core project team later?
 -->
 
 ## Consulted
-<!--
-Who has been given the opportunity to provide feedback on the
-proposal?
--->
-
+No formal external consultations have been conducted regarding this proposal.
