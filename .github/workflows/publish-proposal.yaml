@@ -11,7 +11,13 @@ jobs:
       contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js (Requerido por las nuevas versiones)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+        
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v4
         with:
