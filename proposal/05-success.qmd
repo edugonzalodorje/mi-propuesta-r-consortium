@@ -1,22 +1,12 @@
 # Success
-<!--
-Projects should have a definition of done that is measurable, and a
-thorough understanding going in of what the risks are to delivery
--->
+The main delivery risks relate to stability, testing, and deployment, and will be mitigated through progressive validation, automated testing, and verification of installation and publication.
 
 ## Definition of done
-<!--
-What does success look like?
--->
+
+The funded phase will be considered complete when a consolidated, stable, validated, and reproducible version of Transparent Statistical Learning with R/Shiny is available. This version will include strengthened existing functionality, validated new functionality, organized and reusable code, automated testing, documented statistical and functional validation, technical documentation and a user manual, a reproducible repository, and the configuration required for publication and deployment.
 
 ## Measuring success
-<!--
-How will we know when success is achieved, what markers can we use
-along the way
--->
+Success will be measured based on the proper functioning of the main workflows, completion of the planned improvements, and incorporation and validation of the new functionality. Independent checks will verify the validity and consistency of the statistical results and the reproducibility of the environment and analyses. This will include functional and automated testing using reference datasets and scenarios, independent calculations, code and documentation review, and installation and deployment testing.
 
 ## Future work
-<!--
-How could this be extended / developed in the future by yourself
-and/or the community in general?
--->
+The platform may be progressively expanded through the incorporation of new statistical procedures, diagnostics, visualizations, documentation resources, and translations, as well as through contributions from the R community. Its evolution and adoption will be linked to its dissemination and availability within the community. To facilitate reuse, extension, and reproducibility, the project will provide a public repository, an open license, technical and user documentation, and reproducible resources.
