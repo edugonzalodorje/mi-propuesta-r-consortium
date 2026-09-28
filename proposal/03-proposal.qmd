@@ -21,16 +21,15 @@ Figure 1 summarizes the main functionalities currently available in the MVP. The
 
 ![Summary of Current Functionalities](proposal/imagen0.jpg){width=90%}
 
-**Specific MVP improvements**
 The specific MVP improvements are presented in the functional and non-functional requirements sections.
 
-**Functional Requirements**
+Functional Requirements
 
 •	FR01. Improve the interface and interaction flows: Optimize navigation, organization, and analysis configuration through the use of Shiny and bslib, promoting a clearer and more consistent user experience.
 •	FR02. Improve visualizations: Enhance the presentation and interactivity of charts and results to facilitate their exploration and interpretation.
 •	FR03. Strengthen existing models: improve modeling procedures, diagnostics, results, and visualizations while maintaining the statistical procedures available in R as their foundation.
 
-**Non-Functional Requirements**
+Non-Functional Requirements
 
 NFR01. Modularity and maintainability: Consolidate modular and reusable code, separating the user interface, processing, statistical analysis, and visualization to facilitate maintenance.
 NFR02. Quality and testing: Implement automated testing in R to verify core functions and critical components and to detect regressions during further development.
