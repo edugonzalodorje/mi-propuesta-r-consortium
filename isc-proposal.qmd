@@ -1,11 +1,9 @@
 ---
-title: "Proposal Title"
+title: "Transparent Statistical Learning with R/Shiny: An Interactive Platform for Discriminant Analysis"
 author:
-  - name: Annie Easley
-    orcid: 5555-5555-5555-5555
-    affiliations:
-      - "Lewis Research Center, National Aeronautics and Space Administration"
-
+  - name: Eduardo Gonzalo Moyano Baquero
+    orcid: 0009-0001-2506-2019
+    
 date: today
 date-format: iso
 format:
