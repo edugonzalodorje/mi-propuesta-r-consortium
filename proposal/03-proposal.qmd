@@ -37,7 +37,7 @@ NFR05. Reproducibility: Maintain an organized, version-controlled repository and
 
 ### Architecture
 
-Transparent Statistical Learning with R/Shiny is developed as an interactive application in R/Shiny, where R serves as the processing and statistical analysis engine, while Shiny provides the web environment, user interface, and management of the application's interaction flows and reactivity. The current codebase includes separate functions for data processing, statistical procedures, and the generation of tables and visualizations. The project will consolidate this structure through greater separation between reusable functions and user interface logic, together with improvements to reactive workflows and reproducibility.
+The current codebase already uses separate functions for data processing, statistical procedures, tables, and visualizations. The funded phase will further separate reusable functions from interface logic and improve reactive workflows and reproducibility
 
 ### Assumptions
 
