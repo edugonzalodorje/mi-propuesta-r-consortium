@@ -2270,44 +2270,12 @@ vertical-align: -.125em;
 <p>For all available models, the platform generates results and evaluation elements that include confusion matrices, performance metrics, and ROC curves. Depending on the model, additional outputs are provided, such as coefficient matrices, rule tables, and visualizations including decision trees, variable importance, and analysis of potentially influential observations. The platform also allows users to copy generated tables and charts for use in reports and documentation.</p>
 <p>Table 1 summarizes the main functionalities currently available in the MVP. The Discriminant Analysis and Logistic Regression options, due to their methodological relevance and the specific statistical requirements involved, are described in greater detail above.</p>
 <p>Table 1. Summary of Current Functionalities</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Tab</strong></th>
-<th><strong>Current Functionality</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1. Load Data</td>
-<td>Loads Excel files, validates the format, and displays data and instructions.</td>
-</tr>
-<tr class="even">
-<td>2. Exploratory Analysis</td>
-<td>Displays percentage tables; allows users to select variables for imputation or proceed directly to Categorical Variables when no variables are selected.</td>
-</tr>
-<tr class="odd">
-<td>3. Missing Values</td>
-<td>Allows missing values to be handled according to variable type; includes visualizations and <strong>Save Imputation</strong> and <strong>Continue</strong> buttons.</td>
-</tr>
-<tr class="even">
-<td>4. Categorical Variables</td>
-<td>Allows users to select variables, transform their values, convert them to factors, or perform both actions, with execution notifications.</td>
-</tr>
-<tr class="odd">
-<td>5. Models</td>
-<td>Allows users to select the dependent and independent variables, the training/test split, and five modeling alternatives.</td>
-</tr>
-<tr class="even">
-<td>8. Help</td>
-<td>Provides information on models, assumptions, diagnostics, metrics, and interpretation.</td>
-</tr>
-</tbody>
-</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img role="img" src="proposal/imagen0.jpg" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Summary Of Current Functionalities</figcaption>
+</figure>
+</div>
 <p>Specific MVP improvements The specific MVP improvements are presented in the functional and non-functional requirements sections.</p>
 <p>Functional Requirements</p>
 <p>• FR01. Improve the interface and interaction flows: Optimize navigation, organization, and analysis configuration through the use of Shiny and bslib, promoting a clearer and more consistent user experience. • FR02. Improve visualizations: Enhance the presentation and interactivity of charts and results to facilitate their exploration and interpretation. • FR03. Strengthen existing models: improve modeling procedures, diagnostics, results, and visualizations while maintaining the statistical procedures available in R as their foundation.</p>
