@@ -10,10 +10,7 @@ The funded work will be carried out over six months, organized into two three-mo
 
 Table 2. Activity and Deliverable Timeline
 
-| **Stage** | **Months** | **Main Activities** | **Results / Deliverables** |
-|---|:---:|---|---|
-| **1. Stabilization and Preparation** | 1–3 | Optimize the current MVP workflows, strengthen code organization, configure `testthat` and `shinytest2`, define datasets and test scenarios, and implement priority adjustments. | Stabilized MVP, consolidated modular structure, reproducible environment, and defined test scenarios, with initial adjustments implemented. |
-| **2. Strengthening and Improvements** | 4–6 | Strengthen existing functionalities, imputation options, diagnostics, model evaluation, results, and visualizations; expand testing and verification. | Strengthened functionalities, improved diagnostics and visualizations, expanded testing, and documented verification results. |
+![Activity and Deliverable Timeline](imagen1.jpg){width=90%}
 
 ## Other aspects
 
