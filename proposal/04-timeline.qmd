@@ -10,7 +10,7 @@ The funded work will be carried out over six months, organized into two three-mo
 
 Table 2. Activity and Deliverable Timeline
 
-![Activity and Deliverable Timeline](imagen1.jpg){width=90%}
+![Activity and Deliverable Timeline](proposal/imagen1.jpg){width=90%}
 
 ## Other aspects
 
