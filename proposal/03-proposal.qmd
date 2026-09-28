@@ -21,14 +21,7 @@ Table 1 summarizes the main functionalities currently available in the MVP. The 
 
 Table 1. Summary of Current Functionalities
 
-| **Tab** | **Current Functionality** |
-|---|---|
-| 1. Load Data | Loads Excel files, validates the format, and displays data and instructions. |
-| 2. Exploratory Analysis | Displays percentage tables; allows users to select variables for imputation or proceed directly to Categorical Variables when no variables are selected. |
-| 3. Missing Values | Allows missing values to be handled according to variable type; includes visualizations and **Save Imputation** and **Continue** buttons. |
-| 4. Categorical Variables | Allows users to select variables, transform their values, convert them to factors, or perform both actions, with execution notifications. |
-| 5. Models | Allows users to select the dependent and independent variables, the training/test split, and five modeling alternatives. |
-| 8. Help | Provides information on models, assumptions, diagnostics, metrics, and interpretation. |
+![Summary Of Current Functionalities](proposal/imagen0.jpg){width=90%}
 
 Specific MVP improvements
 The specific MVP improvements are presented in the functional and non-functional requirements sections.
