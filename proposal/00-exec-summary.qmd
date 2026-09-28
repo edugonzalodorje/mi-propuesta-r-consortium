@@ -2,9 +2,7 @@
 
 Transparent Statistical Learning with R/Shiny: An Interactive Platform for Discriminant Analysis.
 
-Transparent Statistical Learning with R/Shiny is an educational and interactive platform developed in R/Shiny, designed to integrate statistical theory, data preparation, diagnostics, methodological selection, modeling, evaluation, and result interpretation into a unified workflow. Discriminant Analysis is the platform’s methodological foundation and primary focus. Its application requires coordinating various procedures, packages, and decision criteria available in R.
-
-The platform structures the learning and analysis process according to the sequence theory → data → diagnostics → methodological decision → model → results → evaluation → interpretation.
+Transparent Statistical Learning with R/Shiny is an educational and interactive platform developed in R/Shiny, designed to integrate statistical theory, data preparation, diagnostics, methodological selection, modeling, evaluation, and result interpretation into a unified workflow. Discriminant Analysis is the platform’s methodological foundation and primary focus. Its application requires coordinating various procedures, packages, and decision criteria available in R. The platform structures the learning and analysis process according to the sequence theory → data → diagnostics → methodological decision → model → results → evaluation → interpretation.
 
 The platform currently has a functional MVP organized into eight tabs: Load Data, Exploratory Analysis, Missing Values, Categorical Variables, Models, Discriminant Analysis, Logistic Regression, and Help. The platform incorporates LDA/QDA, logistic regression, classical and modern decision trees, and Random Forest, with tables, metrics, visualizations, and explanations to facilitate interpretation of the results.
 
@@ -12,6 +10,6 @@ The first funded phase will last six months and will focus on the technical stre
 
 The funded work will be carried out in two three-month stages: stabilization and preparation, followed by strengthening and improvements. The phase will include automated testing, QA, and verification of Discriminant Analysis results using reference datasets, controlled cases, and independent calculations.
 
-As a result, the project will deliver a technically strengthened, stable, tested, and reproducible MVP, with modular code, improved priority functionalities, and strengthened visualizations. A subsequent second phase may address comprehensive statistical and functional validation, expanded documentation, publication, translation, deployment, and other consolidation activities.
+As a result, the project will deliver a technically strengthened, stable, tested, and reproducible MVP, with modular code, improved priority functionalities, and strengthened visualizations. Subsequent phases may address comprehensive statistical and functional validation, expanded documentation, publication, translation, deployment, and other consolidation activities
 
 The project has approximately 720 hours of prior work, valued at US$21,600. The funded phase includes 333 hours, equivalent to US$9,990. The prior work constitutes a contribution to the project and is not part of the requested funding.
