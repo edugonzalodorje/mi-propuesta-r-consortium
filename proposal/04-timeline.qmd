@@ -8,15 +8,10 @@ The project will begin by organizing the existing MVP code and defining the deve
 
 The funded work will be carried out over six months, organized into two three-month stages. Each stage will build on the results of the previous one: first, the current MVP will be stabilized and organized; subsequently, its existing functionalities will be strengthened.
 
-Table 2. Activity and Deliverable Timeline
-
 ![Activity and Deliverable Timeline](proposal/imagen1.jpg){width=90%}
 
 ## Other aspects
 
 The project's code and development resources will be maintained in a public repository to support reuse and future contributions. An open-source license will be defined for the consolidated project. Public dissemination will be considered as part of the subsequent consolidation phase, including publication of project results and communication through R Consortium channels when appropriate.
 
-Table 3. Funded Work by Stage.
-
 ![Funded Work by Stage](proposal/imagen2.jpg){width=90%}
-
