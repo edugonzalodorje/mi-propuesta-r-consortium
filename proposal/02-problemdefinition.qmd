@@ -1,7 +1,3 @@
----
-bibliography: references.bib
----
-
 # The Problem
 
 Applying Discriminant Analysis requires integrating several stages, including data preparation and exploration, assessment of assumptions, application of statistical tests, selection of procedures, model fitting, validation, and interpretation of results. Although R provides numerous functions and packages for performing these tasks, users must identify and coordinate the relevant tools, adapt the code to the characteristics of each dataset, and integrate the results obtained across the different stages of the analysis.
