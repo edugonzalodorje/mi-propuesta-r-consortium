@@ -21,13 +21,11 @@ Figure 1 summarizes the main functionalities currently available in the MVP. The
 
 ![Summary of Current Functionalities](proposal/imagen0.jpg){width=90%}
 
-The specific MVP improvements are presented in the functional and non-functional requirements sections.
-
 Functional Requirements
 
-•	FR01. Improve the interface and interaction flows: Optimize navigation, organization, and analysis configuration through the use of Shiny and bslib, promoting a clearer and more consistent user experience.
-•	FR02. Improve visualizations: Enhance the presentation and interactivity of charts and results to facilitate their exploration and interpretation.
-•	FR03. Strengthen existing models: improve modeling procedures, diagnostics, results, and visualizations while maintaining the statistical procedures available in R as their foundation.
+FR01. Improve the interface and interaction flows: Optimize navigation, organization, and analysis configuration through the use of Shiny and bslib, promoting a clearer and more consistent user experience.
+FR02. Improve visualizations: Enhance the presentation and interactivity of charts and results to facilitate their exploration and interpretation.
+FR03. Strengthen existing models: improve modeling procedures, diagnostics, results, and visualizations while maintaining the statistical procedures available in R as their foundation.
 
 Non-Functional Requirements
 
@@ -43,10 +41,10 @@ Transparent Statistical Learning with R/Shiny is developed as an interactive app
 
 ### Assumptions
 
-•	The architecture based on R/Shiny will be maintained, using the current MVP as the foundation for the funded phase.
-•	Statistical functionalities will primarily use existing packages and procedures in R, without developing new statistical algorithms.
-•	Interface and visualization improvements will be prioritized according to their contribution to clarity, navigation, understanding, and interpretation of results.
-•	Functionalities requiring research or technical evaluation will be analyzed and tested before their final incorporation.
+The architecture based on R/Shiny will be maintained, using the current MVP as the foundation for the funded phase.
+Statistical functionalities will primarily use existing packages and procedures in R, without developing new statistical algorithms.
+Interface and visualization improvements will be prioritized according to their contribution to clarity, navigation, understanding, and interpretation of results.
+Functionalities requiring research or technical evaluation will be analyzed and tested before their final incorporation.
 
 ### External dependencies
 
