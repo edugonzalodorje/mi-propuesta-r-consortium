@@ -17,20 +17,20 @@ The application is currently organized into eight main tabs: Load Data, Explorat
 
 For all available models, the platform generates results and evaluation elements that include confusion matrices, performance metrics, and ROC curves. Depending on the model, additional outputs are provided, such as coefficient matrices, rule tables, and visualizations including decision trees, variable importance, and analysis of potentially influential observations. The platform also allows users to copy generated tables and charts for use in reports and documentation.
 
-Table 1 summarizes the main functionalities currently available in the MVP. The Discriminant Analysis and Logistic Regression options, due to their methodological relevance and the specific statistical requirements involved, are described in greater detail above.
+Figure 1 summarizes the main functionalities currently available in the MVP. The Discriminant Analysis and Logistic Regression options, due to their methodological relevance and the specific statistical requirements involved, are described in greater detail above.
 
-![Summary Of Current Functionalities](proposal/imagen0.jpg){width=90%}
+![Summary of Current Functionalities](proposal/imagen0.jpg){width=90%}
 
-Specific MVP improvements
+**Specific MVP improvements**
 The specific MVP improvements are presented in the functional and non-functional requirements sections.
 
-Functional Requirements
+**Functional Requirements**
 
 •	FR01. Improve the interface and interaction flows: Optimize navigation, organization, and analysis configuration through the use of Shiny and bslib, promoting a clearer and more consistent user experience.
 •	FR02. Improve visualizations: Enhance the presentation and interactivity of charts and results to facilitate their exploration and interpretation.
 •	FR03. Strengthen existing models: improve modeling procedures, diagnostics, results, and visualizations while maintaining the statistical procedures available in R as their foundation.
 
-Non-Functional Requirements
+**Non-Functional Requirements**
 
 NFR01. Modularity and maintainability: Consolidate modular and reusable code, separating the user interface, processing, statistical analysis, and visualization to facilitate maintenance.
 NFR02. Quality and testing: Implement automated testing in R to verify core functions and critical components and to detect regressions during further development.
