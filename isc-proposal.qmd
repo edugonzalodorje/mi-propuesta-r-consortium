@@ -15,7 +15,6 @@ format:
     geometry:
       - left=1.25in
       - right=1.25in
-bibliography: references.bib
 ---
 
 _This template was last revised on 2026-03-24._
