@@ -1,17 +1,24 @@
 # Project plan
 
 ## Start-up phase
-
-The project will begin by organizing the existing MVP code and defining the development and testing environment for the funded phase. The initial work will include establishing the project structure, confirming the required R/Shiny dependencies, configuring testthat and shinytest2, and defining the datasets and test scenarios to be used throughout the project.
+The project will kick off by establishing the public development repository on GitHub under an open-source GPL-3 license and configuring an isolated, reproducible R environment managed via `renv` lockfiles. The initial setup focuses on reorganizing the baseline codebase (`app.R`, `Discriminante.R`), standardizing CRAN package dependencies, and configuring automated testing frameworks (`testthat` and `shinytest2`). During this phase, the team will curate and validate four benchmark datasets to serve as reproducible test scenarios across all statistical classification procedures and UI interaction flows.
 
 ## Technical delivery
+Project execution spans six months, organized into two sequential three-month developmental stages:
 
-The funded work will be carried out over six months, organized into two three-month stages. Each stage will build on the results of the previous one: first, the current MVP will be stabilized and organized; subsequently, its existing functionalities will be strengthened.
+Stage 1: Stabilization & Architecture (Months 1–3): Focuses on progressive UI enhancement using `bslib`, decoupling monolithic scripts into modular UI and `moduleServer` layers, integrating `datamods` for flexible data importing, consolidating the core package structure (`run_app()`), preparing test benchmark datasets, and designing `testthat` automated test suites.
+
+Stage 2: Validation, Testing & Package Delivery (Months 4–6): Focuses on executing full test suites (`testthat` and `shinytest2`), generating testing reports, resolving identified edge-case defects, verifying Discriminant Analysis calculations against reference datasets, validating environment reproducibility across clean operating systems using `renv`, and publishing comprehensive technical documentation and user guides.
 
 ![Activity and Deliverable Timeline](proposal/imagen1.jpg){width=90%}
 
 ## Other aspects
+Open-Source Licensing & Code Hosting: The consolidated R package will be maintained in a public GitHub repository under the GPL-3 open-source license to encourage community adoption, transparency, and collaborative contributions.
 
-The project's code and development resources will be maintained in a public repository to support reuse and future contributions. An open-source license will be defined for the consolidated project. Public dissemination will be considered as part of the subsequent consolidation phase, including publication of project results and communication through R Consortium channels when appropriate.
+Community Outreach & Dissemination: Project progress and milestones will be communicated to the broader R community through progress posts on the R Consortium Blog, announcement articles upon package stabilization, presentations at R user conferences (such as UseR!), and participation in ISC project update meetings.
+
+## Financial Plan & Budget Breakdown
+
+The total requested funding is $9,994.08 USD, covering 282 hours of direct development labor across two 3-month stages at an hourly rate of $35.44 USD/hour.
 
 ![Funded Work by Stage](proposal/imagen2.jpg){width=90%}
