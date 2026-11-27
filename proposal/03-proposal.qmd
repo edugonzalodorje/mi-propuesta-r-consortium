@@ -1,14 +1,17 @@
 # The proposal
 
 ## Overview
-Transparent Statistical Learning with R/Shiny proposes consolidating a functional MVP designed to facilitate the application of Discriminant Analysis through an integrated workflow that connects data preparation, statistical diagnostics, methodological selection, modeling, evaluation, and interpretation of results.
+This proposal aims to stabilize, modularize, and formally package "Transparent Statistical Learning with R" into an open-source, production-ready R package equipped with a guided Shiny interface. The package directly addresses workflow fragmentation in R by unifying data preparation, preliminary diagnostic tests, a comprehensive statistical classification suite (integrating LDA and QDA Discriminant Analysis, 2-level and n-level Logistic Regression, Classic Decision Trees, Modern Decision Trees, and Random Forest), and interactive visualization into a seamless analytical pipeline launched via a single command (`run_app()`).
 
-Funding will support the technical strengthening of the MVP over six months, with emphasis on stability, modularization, reproducibility, testing, statistical verification, visualizations, and interface, strengthening existing functionalities and improving the robustness, reproducibility, and reusability of the platform through statistical tools and procedures available in R. The funded work will be carried out in two three-month stages: stabilization and preparation, followed by strengthening and improvements. These activities will provide a stronger and more reusable R/Shiny platform for users applying Discriminant Analysis.
+The requested funding will support technical strengthening over a 6-month period structured into two equal 3-month stages:
+**Stage 1.-Stabilization & Architecture (Months 1–3):** Modernizing the UI using bslib, modularizing UI and server logic, integrating datamods for flexible data importing, restructuring as a standard R package, and setting up automated testing pipelines (testthat).
+**Stage 2.- Validation, Testing & Delivery (Months 4–6):** Executing end-to-end GUI testing (shinytest2), verifying statistical calculations against benchmark datasets across clean environments, managing environment reproducibility with renv, and publishing technical documentation and user guides.
+
+**Benefits to the R Community:** By abstracting complex code requirements across dozens of underlying CRAN packages into a transparent, guided graphical interface, this project lowers the technical barrier for university students, educators, applied researchers, and domain analysts. It fosters statistical rigor by encouraging users to systematically verify model assumptions prior to classification, while providing the broader R ecosystem with an open-source, highly maintainable tool for statistical education and reproducible research.
 
 ## Detail
 
 ### Minimum Viable Product
-
 The current MVP is a functional application developed in R/Shiny that integrates the main stages of statistical analysis within an interactive environment. The platform was initially developed around Discriminant Analysis, which constitutes the methodological focus of the platform, and subsequently incorporated other supervised statistical modeling alternatives.
 
 The application is currently organized into eight main tabs: Load Data, Exploratory Analysis, Missing Values, Categorical Variables, Models, Discriminant Analysis, Logistic Regression, and Help. The MVP interface is currently available in Spanish. The platform provides more comprehensive analyses for the following models due to the assumptions, diagnostic criteria, and statistical procedures involved in their application:
@@ -22,16 +25,31 @@ Figure 1 summarizes the main functionalities currently available in the MVP. The
 ![Summary of Current Functionalities](proposal/imagen0.jpg){width=90%}
 
 ### Architecture
+The project is currently structured as an initial R/Shiny baseline launched via an entry function (`run_app()`). In its current state, the reactive application logic, user interface (UI), server processing, and statistical workflow execution remain concentrated within `app.R` and `Discriminante.R`, supported by auxiliary scripts for data handling, table formatting, and plot rendering.
 
-The current codebase already uses separate functions for data processing, statistical procedures, tables, and visualizations. The funded phase will further separate reusable functions from interface logic and improve reactive workflows and reproducibility
+The funded effort will refactor this monolithic codebase into a production-grade, modular R package architecture structured into three distinct layers:
+**UI Modules:** Isolating visual layout components, input controls, and dashboard sections into dedicated Shiny UI modules built with `bslib`.
+**Server Logic:** Modularizing reactive server flows using `moduleServer` to establish clean scope isolation, improve reactivity management, and simplify code maintenance.
+**Core Statistical & Diagnostic Functions:** Decoupling computational engines, statistical assumption tests (multivariate normality, VIF, Cook's distance, Wilks' Lambda), and plot rendering routines into pure, standalone, testable R functions.
+
+To ensure seamless installation and execution across clean, independent operating environments (preventing dependency mismatch issues when deploying on new machines), the architecture will integrate `renv` lockfiles for environment reproducibility, implement standard package exports and namespaces, and enforce automated checks (`R CMD check`).
 
 ### Assumptions
-
-The architecture based on R/Shiny will be maintained, using the current MVP as the foundation for the funded phase.
-Statistical functionalities will primarily use existing packages and procedures in R, without developing new statistical algorithms.
-Interface and visualization improvements will be prioritized according to their contribution to clarity, navigation, understanding, and interpretation of results.
-Functionalities requiring research or technical evaluation will be analyzed and tested before their final incorporation.
+The project execution is grounded in the following core technical assumptions:
+**Functional Foundation:** The current MVP serves as a functional, proven baseline upon which development will proceed, refactoring and modularizing the existing codebase without replacing the underlying technology stack or rebuilding the system from scratch.
+**R/Shiny Ecosystem Reliance:** R/Shiny will remain the primary technical framework, relying entirely on peer-reviewed packages available on CRAN for statistical classification procedures, diagnostic tests, and graphics rendering, with no development of new theoretical statistical algorithms.
+**Code Optimization & Defect Resolution:** Code modularization across UI, server reactivity, and standalone analytical functions—combined with systematic testing using diverse benchmark datasets—will effectively identify and resolve reactivity bottlenecks, interface inconsistencies, and edge-case execution bugs.
+**Dependency & Environment Compatibility:** Required CRAN package dependencies will remain accessible, maintained, and cross-platform compatible across target operating systems, with version consistency managed through `renv` environment lockfiles.
 
 ### External dependencies
+The package relies exclusively on open-source, peer-reviewed R packages available on CRAN, with no proprietary external software or non-R system dependencies required. The dependencies are organized into six functional modules:
 
-The project depends on the R/Shiny ecosystem and the packages required for the interface, statistical processing and analysis, visualizations, modeling, and testing, including Shiny, bslib, testthat, and shinytest2. Packages specifically required by the statistical procedures and models will be managed using renv, facilitating consistent reproduction of the environment and its versions.
+**GUI & Application Framework:** `shiny`, `bslib`, `shinyWidgets`, `shinyjs`, `DT`, `gt`, `datamods`.
+**Data Processing & Imputation:** `readxl`, `dplyr`, `tidyr`, `scales`, `stringr`, `purrr`, `zoo`, `imputeTS`.
+**Statistical Modeling & Diagnostics:** `MASS`, `MVN`, `CovCorTest`, `CovTools`, `moments`, `car`, `performance`, `caret`, `nnet`, `pROC`.
+**Tree-based Modeling & Visualization:** `partykit`, `ggparty`, `rpart.plot`, `randomForest`.
+**Graphics & Interactive Rendering:** `ggplot2`, `ggpubr`, `plotly`, `RColorBrewer`, `gridExtra`.
+**Environment Management & Testing Framework:** `renv`, `testthat`, `shinytest2`.
+
+All listed packages are distributed under standard open-source licenses (GPL-2, GPL-3, MIT), ensuring full alignment with the R Consortium open-source mandate.
+
