@@ -2288,11 +2288,13 @@ vertical-align: -.125em;
 <h1>Project plan</h1>
 <section id="start-up-phase" class="level2">
 <h2 class="anchored" data-anchor-id="start-up-phase">Start-up phase</h2>
-<p>The project will begin by organizing the existing MVP code and defining the development and testing environment for the funded phase. The initial work will include establishing the project structure, confirming the required R/Shiny dependencies, configuring testthat and shinytest2, and defining the datasets and test scenarios to be used throughout the project.</p>
+<p>The project will kick off by establishing the public development repository on GitHub under an open-source GPL-3 license and configuring an isolated, reproducible R environment managed via <code>renv</code> lockfiles. The initial setup focuses on reorganizing the baseline codebase (<code>app.R</code>, <code>Discriminante.R</code>), standardizing CRAN package dependencies, and configuring automated testing frameworks (<code>testthat</code> and <code>shinytest2</code>). During this phase, the team will curate and validate four benchmark datasets to serve as reproducible test scenarios across all statistical classification procedures and UI interaction flows.</p>
 </section>
 <section id="technical-delivery" class="level2">
 <h2 class="anchored" data-anchor-id="technical-delivery">Technical delivery</h2>
-<p>The funded work will be carried out over six months, organized into two three-month stages. Each stage will build on the results of the previous one: first, the current MVP will be stabilized and organized; subsequently, its existing functionalities will be strengthened.</p>
+<p>Project execution spans six months, organized into two sequential three-month developmental stages:</p>
+<p>Stage 1: Stabilization &amp; Architecture (Months 1–3): Focuses on progressive UI enhancement using <code>bslib</code>, decoupling monolithic scripts into modular UI and <code>moduleServer</code> layers, integrating <code>datamods</code> for flexible data importing, consolidating the core package structure (<code>run_app()</code>), preparing test benchmark datasets, and designing <code>testthat</code> automated test suites.</p>
+<p>Stage 2: Validation, Testing &amp; Package Delivery (Months 4–6): Focuses on executing full test suites (<code>testthat</code> and <code>shinytest2</code>), generating testing reports, resolving identified edge-case defects, verifying Discriminant Analysis calculations against reference datasets, validating environment reproducibility across clean operating systems using <code>renv</code>, and publishing comprehensive technical documentation and user guides.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img role="img" src="proposal/imagen1.jpg" class="img-fluid figure-img" style="width:90.0%"></p>
@@ -2302,7 +2304,12 @@ vertical-align: -.125em;
 </section>
 <section id="other-aspects" class="level2">
 <h2 class="anchored" data-anchor-id="other-aspects">Other aspects</h2>
-<p>The project’s code and development resources will be maintained in a public repository to support reuse and future contributions. An open-source license will be defined for the consolidated project. Public dissemination will be considered as part of the subsequent consolidation phase, including publication of project results and communication through R Consortium channels when appropriate.</p>
+<p>Open-Source Licensing &amp; Code Hosting: The consolidated R package will be maintained in a public GitHub repository under the GPL-3 open-source license to encourage community adoption, transparency, and collaborative contributions.</p>
+<p>Community Outreach &amp; Dissemination: Project progress and milestones will be communicated to the broader R community through progress posts on the R Consortium Blog, announcement articles upon package stabilization, presentations at R user conferences (such as UseR!), and participation in ISC project update meetings.</p>
+</section>
+<section id="financial-plan-budget-breakdown" class="level2">
+<h2 class="anchored" data-anchor-id="financial-plan-budget-breakdown">Financial Plan &amp; Budget Breakdown</h2>
+<p>The total requested funding is $9,994.08 USD, covering 282 hours of direct development labor across two 3-month stages at an hourly rate of $35.44 USD/hour.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img role="img" src="proposal/imagen2.jpg" class="img-fluid figure-img" style="width:90.0%"></p>
