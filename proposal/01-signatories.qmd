@@ -4,19 +4,23 @@
 **Eduardo Gonzalo Moyano Baquero, M.A.E.**
 **Principal Investigator and Lead Developer**
 
-Engineer specializing in Statistics and Computer Science. Responsible for the methodological design, architecture and implementation in R/Shiny, development of the Discriminant Analysis workflows, integration of statistical procedures, and implementation of automated testing and statistical verification processes. Approximately six months of prior prototyping and development work provide the technical foundation for the present funded phase.
-
-## Live Interactive Prototype (MVP): https://bds-eduardo-baquero.shinyapps.io/SOFTWARE-DISCRIMINANTE/
+Statistical and Computer Engineer. Responsible for methodological design, R package architecture, R/Shiny implementation, Discriminant Analysis workflow integration, and statistical verification. While his software engineering experience stems primarily from enterprise and private sector developments, his technical capability in R/Shiny is directly demonstrated through the functional interactive MVP.
+**Live Interactive Prototype (MVP): https://bds-eduardo-baquero.shinyapps.io/SOFTWARE-DISCRIMINANTE/**
 
 **Lilia Beatriz Santos Díaz, M.A.E., M.S.I.G., M.I.A.**
 **UX/UI and Front-End Specialist**
 
-Computer systems engineer with experience in enterprise software development. Responsible for the design and evaluation of the user experience and user interface (UX/UI), development and review of visualizations, usability evaluation, and execution of interaction and application functionality tests.
+Computer Systems Engineer with extensive background in enterprise software development. Responsible for user experience design, interface optimization with `bslib`, front-end interaction testing, and usability evaluation.
 
 **Ma. Mercedes Jaramillo Campos, M.A.E.**
 **QA, Process, and Documentation Specialist**
 
-Computer systems engineer with experience in process analysis and documentation. Responsible for quality assurance (QA), planning, execution, and documentation of tests, incident tracking and management, regression testing, technical documentation, preparation of the user manual, and consolidation of project deliverables.
+Computer Systems Engineer specialized in process engineering and quality assurance. Responsible for test planning, execution, automated test design (`testthat`, `shinytest2`), bug tracking, and user documentation for the R package.
+
+**Note on Track Record:** The project team’s professional trajectory has been built primarily within the private corporate sector. Consequently, proprietary enterprise codebases cannot be published. Public technical verification of the team's execution capabilities is provided via the live interactive Shiny MVP linked above.
+
+## Contributors
+No external contributors outside the core project team have actively participated in drafting this proposal.
 
 ## Consulted
-No formal external consultations have been conducted regarding this proposal.
+Preliminary informal feedback on the statistical logic and scope of the proposal has been requested from an independent mathematician, who provided positive initial evaluations. Formal external consulting with academic and R community members will be conducted as part of the project validation phase.
