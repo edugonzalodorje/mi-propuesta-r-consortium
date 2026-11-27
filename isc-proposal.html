@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Eduardo Gonzalo Moyano Baquero">
-<meta name="dcterms.date" content="2026-11-26">
+<meta name="dcterms.date" content="2026-11-27">
 
 <title>Transparent Statistical Learning with R/Shiny: An Interactive Platform for Discriminant Analysis</title>
 <style>
@@ -2196,7 +2196,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2026-11-26</p>
+      <p class="date">2026-11-27</p>
     </div>
   </div>
   
@@ -2222,24 +2222,26 @@ vertical-align: -.125em;
 <section id="project-team" class="level2">
 <h2 class="anchored" data-anchor-id="project-team">Project team</h2>
 <p><strong>Eduardo Gonzalo Moyano Baquero, M.A.E.</strong> <strong>Principal Investigator and Lead Developer</strong></p>
-<p>Engineer specializing in Statistics and Computer Science. Responsible for the methodological design, architecture and implementation in R/Shiny, development of the Discriminant Analysis workflows, integration of statistical procedures, and implementation of automated testing and statistical verification processes. Approximately six months of prior prototyping and development work provide the technical foundation for the present funded phase.</p>
-</section>
-<section id="live-interactive-prototype-mvp-httpsbds-eduardo-baquero.shinyapps.iosoftware-discriminante" class="level2">
-<h2 class="anchored" data-anchor-id="live-interactive-prototype-mvp-httpsbds-eduardo-baquero.shinyapps.iosoftware-discriminante">Live Interactive Prototype (MVP): https://bds-eduardo-baquero.shinyapps.io/SOFTWARE-DISCRIMINANTE/</h2>
+<p>Statistical and Computer Engineer. Responsible for methodological design, R package architecture, R/Shiny implementation, Discriminant Analysis workflow integration, and statistical verification. While his software engineering experience stems primarily from enterprise and private sector developments, his technical capability in R/Shiny is directly demonstrated through the functional interactive MVP. <strong>Live Interactive Prototype (MVP): https://bds-eduardo-baquero.shinyapps.io/SOFTWARE-DISCRIMINANTE/</strong></p>
 <p><strong>Lilia Beatriz Santos Díaz, M.A.E., M.S.I.G., M.I.A.</strong> <strong>UX/UI and Front-End Specialist</strong></p>
-<p>Computer systems engineer with experience in enterprise software development. Responsible for the design and evaluation of the user experience and user interface (UX/UI), development and review of visualizations, usability evaluation, and execution of interaction and application functionality tests.</p>
+<p>Computer Systems Engineer with extensive background in enterprise software development. Responsible for user experience design, interface optimization with <code>bslib</code>, front-end interaction testing, and usability evaluation.</p>
 <p><strong>Ma. Mercedes Jaramillo Campos, M.A.E.</strong> <strong>QA, Process, and Documentation Specialist</strong></p>
-<p>Computer systems engineer with experience in process analysis and documentation. Responsible for quality assurance (QA), planning, execution, and documentation of tests, incident tracking and management, regression testing, technical documentation, preparation of the user manual, and consolidation of project deliverables.</p>
+<p>Computer Systems Engineer specialized in process engineering and quality assurance. Responsible for test planning, execution, automated test design (<code>testthat</code>, <code>shinytest2</code>), bug tracking, and user documentation for the R package.</p>
+<p><strong>Note on Track Record:</strong> The project team’s professional trajectory has been built primarily within the private corporate sector. Consequently, proprietary enterprise codebases cannot be published. Public technical verification of the team’s execution capabilities is provided via the live interactive Shiny MVP linked above.</p>
+</section>
+<section id="contributors" class="level2">
+<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
+<p>No external contributors outside the core project team have actively participated in drafting this proposal.</p>
 </section>
 <section id="consulted" class="level2">
 <h2 class="anchored" data-anchor-id="consulted">Consulted</h2>
-<p>No formal external consultations have been conducted regarding this proposal.</p>
+<p>Preliminary informal feedback on the statistical logic and scope of the proposal has been requested from an independent mathematician, who provided positive initial evaluations. Formal external consulting with academic and R community members will be conducted as part of the project validation phase.</p>
 </section>
 </section>
 <section id="the-problem" class="level1">
 <h1>The Problem</h1>
-<p>Applying Discriminant Analysis requires integrating several stages, including data preparation and exploration, assessment of assumptions, application of statistical tests, selection of procedures, model fitting, validation, and interpretation of results. Although R provides numerous functions and packages for performing these tasks, users must identify and coordinate the relevant tools, adapt the code to the characteristics of each dataset, and integrate the results obtained across the different stages of the analysis. The project addresses the difficulty of applying Discriminant Analysis in an integrated, reproducible, and transparent manner while coordinating the statistical tools available in R and facilitating the connection between diagnostics, methodological decisions, modeling, validation, and interpretation of results. Users who apply Discriminant Analysis, regardless of their level of experience with R.</p>
-<p>The Transparent Statistical Learning with R/Shiny platform seeks to reduce the time and effort required to perform these analyses by integrating existing R tools into a simpler, understandable, reproducible, and transparent workflow, enabling users to better leverage the statistical capabilities of the language. The workflow explicitly maintains the relationship between the main stages of the analysis: data → diagnostics → methodological decision → modeling → validation → interpretation, facilitating an understanding of the decisions made and the traceability of the results obtained. The project has approximately six months of prior work in prototyping and development, during which a functional MVP was built in R/Shiny. The MVP integrates the main stages of the statistical analysis and constitutes the technical foundation of the present proposal.</p>
+<p>Applying statistical classification methods—and Discriminant Analysis in particular—in R currently requires users to identify, coordinate, and execute dozens of independent, function-based packages across multiple analytical stages. To execute a methodologically sound analysis, users must write custom command-line scripts to connect specialized libraries for missing value handling (<code>imputeTS</code>), multivariate normality and covariance testing (<code>MVN</code>, <code>CovCorTest</code>), multicollinearity and model diagnostics (<code>car</code>, <code>performance</code>), tree-based modeling and ROC evaluation (<code>partykit</code>, <code>pROC</code>), and custom visualization (<code>ggplot2</code>, <code>ggparty</code>). This fragmented, syntax-heavy workflow creates a steep technical barrier that directly impacts applied researchers, university students, educators, and domain analysts who require robust statistical modeling but lack advanced R coding expertise, often leading them to omit critical preliminary diagnostic checks and compromise statistical rigor.</p>
+<p>While existing function-based packages provide powerful individual algorithms, they lack a consolidated, guided workflow that seamlessly connects data preparation and assumption diagnostics to model fitting and automated interpretation within a single environment. To address this limitation, the proposed project unifies these disjointed tools into a single, standardized R package. By enabling users to simply install the library and launch a transparent, interactive GUI via a single command (e.g., <code>run_app()</code>), the package eliminates the coding requirement while preserving full statistical rigor and transparency across the entire analytical workflow.</p>
 </section>
 <section id="the-proposal" class="level1">
 <h1>The proposal</h1>
